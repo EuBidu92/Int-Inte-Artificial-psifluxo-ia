@@ -1,0 +1,16 @@
+{
+    "nome": "Saúde Mental Psicologia",
+    "cidade": "Salvador - BA",
+
+    "especialidades": [
+        "Ansiedade",
+        "Depressão",
+        "Relacionamentos",
+        "Autoconhecimento"
+    ],
+
+    "modalidades": [
+        "Online",
+        "Presencial"
+    ]
+}

@@ -1,0 +1,11 @@
+id,nome,modalidade,dia,periodo,especialidade,valor_social,ativo
+1,Ana Souza,online,segunda-feira,noite,ansiedade,sim,sim
+2,Ana Souza,online,quarta-feira,tarde,relacionamentos,sim,sim
+3,Carlos Lima,presencial,terça-feira,manhã,depressão,não,sim
+4,Carlos Lima,presencial,quinta-feira,noite,ansiedade,sim,sim
+5,Marina Santos,online,quinta-feira,noite,psicanálise,sim,sim
+6,Marina Santos,online,sexta-feira,tarde,autoconhecimento,sim,sim
+7,Paulo Andrade,presencial,quarta-feira,noite,relacionamentos,não,sim
+8,Paulo Andrade,presencial,sexta-feira,manhã,ansiedade,sim,sim
+9,Juliana Costa,online,terça-feira,noite,depressão,sim,sim
+10,Juliana Costa,presencial,quinta-feira,tarde,psicanálise,não,sim

@@ -1,0 +1,501 @@
+﻿texto,intencao
+Quero marcar uma consulta,agendamento
+Gostaria de agendar um atendimento,agendamento
+Tem algum horário disponível?,agendamento
+Quero começar terapia,agendamento
+Estou procurando atendimento psicológico,agendamento
+Gostaria de iniciar acompanhamento,agendamento
+Como faço para marcar uma sessão?,agendamento
+Há vaga para atendimento esta semana?,agendamento
+Preciso conversar com um psicólogo,agendamento
+Quero iniciar uma análise,agendamento
+Gostaria de ser atendido,agendamento
+Estou buscando um profissional,agendamento
+Posso marcar uma consulta?,agendamento
+Queria agendar uma sessão,agendamento
+Tenho interesse em começar terapia,agendamento
+Vocês têm horário livre?,agendamento
+Quero iniciar psicoterapia,agendamento
+Como posso começar o atendimento?,agendamento
+Gostaria de marcar para esta semana,agendamento
+Tem vaga para novo paciente?,agendamento
+Quero entrar em acompanhamento,agendamento
+Estou precisando de atendimento,agendamento
+Desejo começar um processo terapêutico,agendamento
+Queria saber se tem agenda disponível,agendamento
+Preciso marcar com um psicólogo,agendamento
+Quero fazer minha primeira sessão,agendamento
+Posso agendar para a próxima semana?,agendamento
+Gostaria de começar uma terapia com vocês,agendamento
+Tem disponibilidade para atendimento?,agendamento
+Quero reservar um horário,agendamento
+Preciso de uma consulta psicológica,agendamento
+Quero dar início ao tratamento,agendamento
+Como faço para entrar na agenda?,agendamento
+Gostaria de começar psicanálise,agendamento
+Quero marcar um primeiro encontro,agendamento
+Tem como me encaixar em algum horário?,agendamento
+Estou procurando vaga para terapia,agendamento
+Gostaria de iniciar sessões,agendamento
+Quero agendar com um psicólogo,agendamento
+Tem atendimento disponível hoje?,agendamento
+Quero começar meu acompanhamento psicológico,agendamento
+Preciso de um horário para consulta,agendamento
+Gostaria de marcar uma conversa inicial,agendamento
+Quero fazer terapia e preciso agendar,agendamento
+Vocês estão aceitando novos pacientes?,agendamento
+Tem vaga para começar atendimento?,agendamento
+Como entro na lista de atendimento?,agendamento
+Gostaria de iniciar um processo de análise,agendamento
+Quero agendar minha primeira consulta,agendamento
+Preciso marcar um atendimento para mim,agendamento
+Quero começar atendimento o quanto antes,agendamento
+Posso escolher um horário para a sessão?,agendamento
+Gostaria de saber quando posso começar,agendamento
+Tem algum psicólogo com agenda aberta?,agendamento
+Quero iniciar atendimento online,agendamento
+Quero marcar atendimento presencial,agendamento
+Preciso de uma vaga no período da noite,agendamento
+Tem horário pela manhã para começar terapia?,agendamento
+Gostaria de agendar para terça-feira,agendamento
+Posso marcar para o fim de semana?,agendamento
+Quero uma consulta com psicólogo,agendamento
+Estou interessado em fazer acompanhamento,agendamento
+Gostaria de iniciar terapia individual,agendamento
+Quero agendar uma avaliação inicial,agendamento
+Preciso começar terapia,agendamento
+Tem como marcar uma sessão para amanhã?,agendamento
+Queria começar um acompanhamento com psicanalista,agendamento
+Gostaria de entrar em terapia,agendamento
+Como faço para conseguir uma vaga?,agendamento
+Quero me cadastrar para atendimento,agendamento
+Posso fazer um agendamento agora?,agendamento
+Quero marcar uma sessão de psicoterapia,agendamento
+Tenho interesse em iniciar análise,agendamento
+Gostaria de consultar a disponibilidade,agendamento
+Preciso falar com um profissional e quero marcar,agendamento
+Quero marcar um horário para conversar,agendamento
+Vocês conseguem me atender esta semana?,agendamento
+Quero agendar uma consulta psicológica,agendamento
+Gostaria de reservar uma sessão,agendamento
+Tem vaga para acompanhamento psicológico?,agendamento
+Quero começar a ser atendido,agendamento
+Gostaria de marcar um atendimento inicial,agendamento
+"Preciso de um psicólogo, como agendo?",agendamento
+Quero agendar uma sessão com vocês,agendamento
+Posso iniciar o atendimento ainda este mês?,agendamento
+Quero saber os horários para novos pacientes,agendamento
+Tenho interesse em marcar uma primeira consulta,agendamento
+Gostaria de começar uma análise pessoal,agendamento
+Quero entrar na agenda de atendimento,agendamento
+Tem como agendar um horário para mim?,agendamento
+Preciso começar um tratamento psicológico,agendamento
+Queria marcar uma consulta com urgência administrativa,agendamento
+Gostaria de iniciar acompanhamento na clínica,agendamento
+Quero começar as sessões,agendamento
+Posso marcar uma entrevista inicial?,agendamento
+Estou buscando um horário para terapia,agendamento
+Quero agendar o primeiro atendimento,agendamento
+Gostaria de saber se há vagas abertas,agendamento
+Preciso reservar um horário com psicólogo,agendamento
+Quero começar o processo terapêutico,agendamento
+Quanto custa a sessão?,valores
+Qual é o valor do atendimento?,valores
+Vocês trabalham com valor social?,valores
+Quanto preciso pagar por consulta?,valores
+Gostaria de saber os preços,valores
+Qual o preço de cada sessão?,valores
+Existe atendimento gratuito?,valores
+Aceitam plano de saúde?,valores
+O atendimento social custa quanto?,valores
+Como funcionam os pagamentos?,valores
+Tem desconto no atendimento?,valores
+Qual o investimento mensal?,valores
+Quanto fica cada consulta?,valores
+Qual é o valor da terapia?,valores
+Queria saber quanto custa,valores
+Tem preço social?,valores
+Qual o valor da sessão online?,valores
+Quanto custa o atendimento presencial?,valores
+Vocês aceitam convênio?,valores
+Posso pagar por sessão?,valores
+Tem pacote mensal?,valores
+Qual a forma de pagamento?,valores
+Aceitam Pix?,valores
+Dá para pagar no cartão?,valores
+O valor é fixo?,valores
+Existe desconto para estudante?,valores
+Vocês fazem atendimento a preço popular?,valores
+Quanto custa começar a terapia?,valores
+Queria saber o valor antes de agendar,valores
+Qual o preço da primeira consulta?,valores
+O atendimento tem algum custo?,valores
+Tem atendimento de baixo custo?,valores
+Quanto é uma consulta com psicólogo?,valores
+Qual o valor cobrado pelo psicanalista?,valores
+O preço muda no atendimento online?,valores
+Qual é a mensalidade?,valores
+Vocês cobram por encontro?,valores
+Tem opção gratuita ou social?,valores
+O pagamento é antecipado?,valores
+Preciso pagar sinal?,valores
+Quanto custa uma sessão de psicanálise?,valores
+Qual é a faixa de preço?,valores
+Vocês emitem recibo?,valores
+Aceitam reembolso do plano?,valores
+Quanto eu gastaria por mês?,valores
+Existe taxa de matrícula?,valores
+Qual o preço do acompanhamento psicológico?,valores
+O valor é negociável?,valores
+Tem bolsa para atendimento?,valores
+Quanto custa o pacote de sessões?,valores
+Queria informações sobre os valores,valores
+Qual é o preço do atendimento social?,valores
+Tem desconto para desempregado?,valores
+Vocês trabalham com escala de renda?,valores
+Posso pagar depois da sessão?,valores
+O valor inclui a primeira entrevista?,valores
+Quanto sai cada encontro?,valores
+Qual é o custo por semana?,valores
+O preço é o mesmo para todos?,valores
+Tem atendimento pelo SUS?,valores
+Vocês aceitam transferência bancária?,valores
+Qual valor devo separar para a consulta?,valores
+Quanto custa terapia online por mês?,valores
+Existe taxa de cancelamento?,valores
+Queria saber os meios de pagamento,valores
+O atendimento cabe no orçamento social?,valores
+Qual é o valor mínimo?,valores
+Tem plano de sessões?,valores
+Quanto é cobrado na avaliação inicial?,valores
+Há desconto pagando o mês inteiro?,valores
+O preço varia conforme o profissional?,valores
+Quanto custa uma sessão de cinquenta minutos?,valores
+O atendimento presencial é mais caro?,valores
+Aceitam cartão de crédito?,valores
+Tem como parcelar?,valores
+Qual é o preço para estudante?,valores
+Quanto custa terapia com valor reduzido?,valores
+Vocês atendem por convênio médico?,valores
+O valor é informado antes do atendimento?,valores
+Quero saber quanto vou pagar,valores
+Tem taxa extra?,valores
+Qual o custo total do acompanhamento?,valores
+O pagamento pode ser por Pix?,valores
+Existe valor promocional?,valores
+Quanto custa a entrevista inicial?,valores
+Vocês oferecem gratuidade?,valores
+Tem atendimento voluntário?,valores
+Quanto custa por mês fazendo uma sessão semanal?,valores
+Qual é o valor para atendimento remoto?,valores
+O preço muda conforme o horário?,valores
+Posso usar meu plano de saúde?,valores
+Queria saber se aceitam dinheiro,valores
+Tem desconto no primeiro mês?,valores
+Qual é o valor de uma sessão individual?,valores
+O preço do atendimento é acessível?,valores
+Quanto custa consultar com vocês?,valores
+Preciso saber o valor antes de marcar,valores
+Como é feita a cobrança?,valores
+Quais são as condições de pagamento?,valores
+Qual o preço da psicoterapia?,valores
+O atendimento é online?,modalidade
+Vocês atendem presencialmente?,modalidade
+Posso fazer terapia por videochamada?,modalidade
+Existe atendimento remoto?,modalidade
+Tenho preferência por atendimento online,modalidade
+Quero atendimento presencial,modalidade
+Como funciona a modalidade online?,modalidade
+O atendimento acontece por chamada de vídeo?,modalidade
+Atendem em consultório?,modalidade
+Posso escolher entre online e presencial?,modalidade
+Onde acontecem as sessões presenciais?,modalidade
+O acompanhamento pode ser a distância?,modalidade
+Vocês fazem consulta pelo WhatsApp?,modalidade
+A sessão online é por qual aplicativo?,modalidade
+Atendem por Google Meet?,modalidade
+Tem atendimento por Zoom?,modalidade
+Qual é o endereço do consultório?,modalidade
+Onde fica a clínica?,modalidade
+Vocês atendem em Salvador?,modalidade
+O atendimento pode ser feito de casa?,modalidade
+Tem opção híbrida?,modalidade
+Posso alternar entre online e presencial?,modalidade
+As sessões são só online?,modalidade
+Vocês têm atendimento presencial à noite?,modalidade
+Atendem pessoas de outras cidades?,modalidade
+Posso fazer terapia morando em outro estado?,modalidade
+O atendimento remoto funciona pelo celular?,modalidade
+Preciso instalar algum aplicativo?,modalidade
+A consulta presencial é em qual bairro?,modalidade
+Tem estacionamento no local?,modalidade
+O consultório é acessível?,modalidade
+Vocês atendem por ligação de vídeo?,modalidade
+Pode ser apenas por áudio?,modalidade
+Atendem por telefone?,modalidade
+A terapia pode ser online para quem mora fora?,modalidade
+Quero saber as opções de atendimento,modalidade
+Qual modalidade vocês oferecem?,modalidade
+Tem consulta domiciliar?,modalidade
+Vocês fazem atendimento em casa?,modalidade
+O atendimento presencial é individual?,modalidade
+As sessões online são ao vivo?,modalidade
+Posso usar computador ou celular?,modalidade
+Atendem fora de Salvador?,modalidade
+Qual plataforma é usada na sessão online?,modalidade
+O link da videochamada é enviado antes?,modalidade
+Tem diferença entre online e presencial?,modalidade
+Posso mudar de modalidade depois?,modalidade
+O atendimento online é por vídeo?,modalidade
+Onde é realizado o atendimento presencial?,modalidade
+Vocês atendem somente remotamente?,modalidade
+Existe consultório físico?,modalidade
+Quero saber se posso ser atendido pela internet,modalidade
+A sessão pode acontecer pelo notebook?,modalidade
+Vocês atendem em clínica ou home office?,modalidade
+Qual o local exato do consultório?,modalidade
+Tem atendimento para quem está no exterior?,modalidade
+O atendimento online funciona em outro país?,modalidade
+Vocês usam Meet ou Zoom?,modalidade
+Posso fazer a sessão de qualquer lugar?,modalidade
+Atendem em espaço compartilhado?,modalidade
+O consultório tem acessibilidade para cadeirante?,modalidade
+A clínica fica perto de transporte público?,modalidade
+Posso escolher atendimento remoto?,modalidade
+A consulta pode ser feita por chamada no celular?,modalidade
+Tem opção presencial aos sábados?,modalidade
+O atendimento é somente individual ou também em grupo?,modalidade
+Vocês oferecem modalidade híbrida?,modalidade
+O encontro online precisa de câmera?,modalidade
+Posso participar sem ligar a câmera?,modalidade
+O atendimento presencial é em sala privada?,modalidade
+Tem sessão por videoconferência?,modalidade
+A clínica atende em qual região?,modalidade
+Quero confirmar se há atendimento online,modalidade
+A terapia remota é permitida?,modalidade
+Posso fazer acompanhamento morando longe?,modalidade
+Atendem brasileiros que estão fora do país?,modalidade
+Como recebo o acesso da sessão online?,modalidade
+O endereço é próximo ao metrô?,modalidade
+Existe atendimento em mais de uma unidade?,modalidade
+Onde fica a unidade presencial?,modalidade
+A sessão online pode ser pelo computador?,modalidade
+Posso fazer a consulta pelo tablet?,modalidade
+O atendimento remoto é seguro?,modalidade
+Tem sala de espera no consultório?,modalidade
+Vocês atendem em ambiente presencial?,modalidade
+Quero saber onde será a sessão,modalidade
+A modalidade é escolhida no agendamento?,modalidade
+Posso trocar de presencial para online?,modalidade
+Atendem em domicílio para pessoas com mobilidade reduzida?,modalidade
+As consultas são por vídeo ou texto?,modalidade
+Existe atendimento por chat?,modalidade
+O atendimento online é síncrono?,modalidade
+Tem consulta presencial em Salvador?,modalidade
+Qual é a modalidade principal da clínica?,modalidade
+Vocês realizam atendimento virtual?,modalidade
+Posso ser atendido sem sair de casa?,modalidade
+A consulta acontece em consultório próprio?,modalidade
+Quero informações sobre o local,modalidade
+Vocês têm endereço físico?,modalidade
+Como é feita a sessão a distância?,modalidade
+Como funciona a psicoterapia?,funcionamento
+Como é uma sessão de psicanálise?,funcionamento
+Quanto tempo dura uma sessão?,funcionamento
+A terapia acontece toda semana?,funcionamento
+Qual a diferença entre psicologia e psicanálise?,funcionamento
+Como acontece o primeiro atendimento?,funcionamento
+O que é psicoterapia?,funcionamento
+Como funciona o acompanhamento psicológico?,funcionamento
+Quantas sessões são necessárias?,funcionamento
+O que acontece durante uma sessão?,funcionamento
+Como funciona o processo terapêutico?,funcionamento
+Qual é a frequência dos atendimentos?,funcionamento
+O que é psicanálise?,funcionamento
+Como funciona uma análise?,funcionamento
+A sessão dura cinquenta minutos?,funcionamento
+Preciso falar de tudo na primeira sessão?,funcionamento
+Como é o primeiro encontro?,funcionamento
+O psicólogo faz perguntas?,funcionamento
+Existe duração mínima do tratamento?,funcionamento
+A terapia tem prazo para terminar?,funcionamento
+Como funciona o sigilo?,funcionamento
+O que devo esperar da primeira consulta?,funcionamento
+Preciso preparar alguma coisa?,funcionamento
+Como funciona o vínculo com o terapeuta?,funcionamento
+Qual é o papel do psicólogo?,funcionamento
+Qual é o papel do psicanalista?,funcionamento
+A terapia dá conselhos?,funcionamento
+Como saber se a terapia está funcionando?,funcionamento
+As sessões são semanais?,funcionamento
+Pode ter mais de uma sessão por semana?,funcionamento
+A frequência pode mudar?,funcionamento
+O atendimento é individual?,funcionamento
+Como é definido o objetivo do tratamento?,funcionamento
+O profissional faz diagnóstico?,funcionamento
+Como funciona o acolhimento inicial?,funcionamento
+A primeira sessão é diferente das outras?,funcionamento
+Preciso contar toda minha história?,funcionamento
+O que posso falar na sessão?,funcionamento
+Existe alguma regra para participar?,funcionamento
+Como funciona a escuta psicanalítica?,funcionamento
+Qual a diferença entre terapia e análise?,funcionamento
+O tratamento é baseado em conversa?,funcionamento
+Como funciona o encerramento da terapia?,funcionamento
+Posso parar quando quiser?,funcionamento
+Como é combinada a frequência?,funcionamento
+O horário é sempre o mesmo?,funcionamento
+A sessão pode durar mais?,funcionamento
+O que acontece se eu ficar em silêncio?,funcionamento
+Como funciona o atendimento psicológico?,funcionamento
+A psicanálise usa testes?,funcionamento
+O psicólogo passa exercícios?,funcionamento
+Existe tarefa entre as sessões?,funcionamento
+Como funciona a confidencialidade?,funcionamento
+O terapeuta pode contar o que eu digo?,funcionamento
+Qual abordagem é utilizada?,funcionamento
+Vocês trabalham com psicanálise?,funcionamento
+Como funciona a abordagem psicanalítica?,funcionamento
+O que diferencia psicoterapia de aconselhamento?,funcionamento
+Como é conduzida uma sessão?,funcionamento
+Preciso ter um diagnóstico para fazer terapia?,funcionamento
+A terapia serve apenas para quem está doente?,funcionamento
+Como é feita a avaliação inicial?,funcionamento
+Existe contrato terapêutico?,funcionamento
+Como são combinadas faltas e remarcações?,funcionamento
+O atendimento tem duração definida?,funcionamento
+Como funciona o processo de alta?,funcionamento
+O que é associação livre?,funcionamento
+O que é escuta clínica?,funcionamento
+Como funciona o tratamento pela fala?,funcionamento
+A família participa das sessões?,funcionamento
+O atendimento é confidencial?,funcionamento
+Como funciona para menores de idade?,funcionamento
+A terapia pode ser interrompida?,funcionamento
+O que acontece após a primeira consulta?,funcionamento
+Como o profissional acompanha a evolução?,funcionamento
+Existe prontuário?,funcionamento
+A sessão tem roteiro?,funcionamento
+Posso escolher o tema da conversa?,funcionamento
+O terapeuta fala muito ou pouco?,funcionamento
+Como funciona a análise dos sonhos?,funcionamento
+O profissional interpreta tudo?,funcionamento
+A psicoterapia tem etapas?,funcionamento
+Como é estabelecido o enquadre?,funcionamento
+O que significa setting terapêutico?,funcionamento
+A sessão começa no horário marcado?,funcionamento
+Como são definidos os objetivos?,funcionamento
+O tratamento é personalizado?,funcionamento
+O que acontece se eu faltar?,funcionamento
+Como funciona o atendimento social?,funcionamento
+A terapia é indicada para qualquer idade?,funcionamento
+Como funciona uma entrevista inicial?,funcionamento
+O que é demanda terapêutica?,funcionamento
+Como o psicólogo conduz o atendimento?,funcionamento
+Posso fazer terapia sem saber o que falar?,funcionamento
+A sessão é uma conversa comum?,funcionamento
+Como funciona o compromisso semanal?,funcionamento
+O que ocorre no início do processo?,funcionamento
+Como é feito o acompanhamento ao longo do tempo?,funcionamento
+Qual a diferença entre psicólogo e psiquiatra?,funcionamento
+A terapia substitui medicação?,funcionamento
+Preciso remarcar minha sessão,remarcacao
+Quero trocar o meu horário,remarcacao
+Não poderei comparecer à consulta,remarcacao
+Preciso cancelar o atendimento,remarcacao
+Podemos reagendar a sessão?,remarcacao
+Quero mudar o dia da consulta,remarcacao
+Não consigo comparecer hoje,remarcacao
+É possível alterar meu horário?,remarcacao
+Vou faltar ao atendimento,remarcacao
+Preciso transferir a consulta para outro dia,remarcacao
+Quero cancelar o horário marcado,remarcacao
+Posso antecipar minha sessão?,remarcacao
+Preciso mudar a consulta para sexta,remarcacao
+Não vou conseguir ir amanhã,remarcacao
+Quero adiar o atendimento,remarcacao
+Posso trocar de dia?,remarcacao
+Preciso cancelar a sessão de hoje,remarcacao
+Quero reagendar para a próxima semana,remarcacao
+Tem como mudar o horário?,remarcacao
+Vou chegar atrasado,remarcacao
+Posso atrasar alguns minutos?,remarcacao
+Não conseguirei entrar na sessão online,remarcacao
+Preciso desmarcar,remarcacao
+Quero confirmar meu novo horário,remarcacao
+Posso passar a consulta para outro dia?,remarcacao
+Não estarei disponível no horário marcado,remarcacao
+Quero alterar a data,remarcacao
+Preciso mudar de manhã para noite,remarcacao
+Dá para trocar o atendimento presencial por online?,remarcacao
+Quero cancelar minha consulta,remarcacao
+Não poderei participar da sessão,remarcacao
+Preciso reagendar por causa do trabalho,remarcacao
+Posso antecipar para hoje?,remarcacao
+Quero adiar para semana que vem,remarcacao
+Preciso trocar terça por quinta,remarcacao
+Não consigo comparecer no horário combinado,remarcacao
+Tem outro horário disponível para remarcar?,remarcacao
+Vou viajar e preciso alterar a sessão,remarcacao
+Preciso mudar porque estou doente,remarcacao
+Quero desmarcar a consulta de amanhã,remarcacao
+Posso remarcar sem perder a sessão?,remarcacao
+Como faço para cancelar?,remarcacao
+Como faço para reagendar?,remarcacao
+Preciso informar uma falta,remarcacao
+Não vou conseguir participar,remarcacao
+Gostaria de trocar o dia,remarcacao
+Quero mudar o horário da sessão online,remarcacao
+Posso remarcar para mais tarde?,remarcacao
+Preciso cancelar por imprevisto,remarcacao
+Quero passar minha consulta para segunda,remarcacao
+Não estarei em casa no horário,remarcacao
+Posso mudar para o período da tarde?,remarcacao
+Quero alterar minha sessão desta semana,remarcacao
+Preciso remarcar o primeiro atendimento,remarcacao
+Quero cancelar meu agendamento,remarcacao
+Não consigo ir ao consultório hoje,remarcacao
+Posso fazer online em vez de presencial hoje?,remarcacao
+Preciso trocar a modalidade desta sessão,remarcacao
+Quero mudar o horário marcado,remarcacao
+Não vou conseguir chegar a tempo,remarcacao
+Posso entrar alguns minutos depois?,remarcacao
+Quero antecipar a consulta,remarcacao
+Preciso adiar a sessão,remarcacao
+Tem como mudar para amanhã?,remarcacao
+Gostaria de reagendar para outro dia,remarcacao
+Vou faltar por motivo de saúde,remarcacao
+Preciso cancelar porque surgiu um compromisso,remarcacao
+Quero remarcar minha consulta psicológica,remarcacao
+Posso transferir o horário para outra semana?,remarcacao
+Preciso alterar a agenda,remarcacao
+Quero desmarcar e marcar novamente,remarcacao
+Não poderei comparecer presencialmente,remarcacao
+Posso mudar esta sessão para online?,remarcacao
+Quero mudar de online para presencial,remarcacao
+Preciso trocar o período do atendimento,remarcacao
+Tem como adiar uma hora?,remarcacao
+Vou me atrasar para a consulta,remarcacao
+Quero confirmar se posso remarcar,remarcacao
+Preciso cancelar definitivamente,remarcacao
+Quero suspender o atendimento por enquanto,remarcacao
+Posso pausar as sessões?,remarcacao
+Quero retomar em outra data,remarcacao
+Preciso mudar a data da primeira sessão,remarcacao
+Não estarei disponível esta semana,remarcacao
+Quero remarcar para o mês que vem,remarcacao
+Posso cancelar sem taxa?,remarcacao
+Preciso saber a política de remarcação,remarcacao
+Quero alterar o horário por causa da faculdade,remarcacao
+Não conseguirei participar por causa do trabalho,remarcacao
+Posso reagendar devido a uma emergência?,remarcacao
+Quero trocar o dia fixo das sessões,remarcacao
+Preciso mudar meu horário semanal,remarcacao
+Gostaria de alterar o horário recorrente,remarcacao
+Quero cancelar apenas a sessão desta semana,remarcacao
+Posso remarcar somente esta consulta?,remarcacao
+Preciso avisar que não vou comparecer,remarcacao
+Quero mudar a sessão para mais cedo,remarcacao
+Posso passar para o fim do dia?,remarcacao
+Preciso trocar o horário de amanhã,remarcacao
+Quero reagendar o atendimento marcado,remarcacao

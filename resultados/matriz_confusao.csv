@@ -1,0 +1,6 @@
+classe_real,agendamento,funcionamento,modalidade,remarcacao,valores
+agendamento,19,0,0,0,1
+funcionamento,0,15,1,3,1
+modalidade,0,1,17,1,1
+remarcacao,0,1,1,18,0
+valores,1,0,2,1,16

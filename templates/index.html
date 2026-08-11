@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Atendimento psicológico online e presencial em Salvador. Informações sobre psicoterapia, psicanálise, modalidades e agendamento."
+    >
+
+    <meta
+        name="keywords"
+        content="psicólogo Salvador, psicoterapia online, psicanálise, terapia online Salvador"
+    >
+
+    <title>
+        Saúde Mental Psicologia | Atendimento Online e Presencial
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='chat.css') }}"
+    >
+
+<link
+    rel="icon"
+    href="{{ url_for('static', filename='favicon.ico') }}"
+>
+
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <!-- Cabeçalho -->
+        <header class="chat-header">
+
+            <div class="chat-identidade">
+
+                <span
+                    class="chat-icone"
+                    aria-hidden="true"
+                >
+                    🧠
+                </span>
+
+                <div>
+                    <strong>
+                        Saúde Mental Psicologia
+                    </strong>
+
+                    <small>
+                        Atendimento online e presencial
+                    </small>
+                </div>
+
+            </div>
+
+            <a
+                href="{{ url_for('limpar') }}"
+                class="botao-nova-conversa"
+            >
+                Nova conversa
+            </a>
+
+        </header>
+
+        <!-- Subtítulo -->
+        <div class="subtitulo">
+            Psicoterapia e psicanálise em Salvador — BA
+        </div>
+
+        <!-- Área rolável -->
+        <section
+            class="chat-body"
+            id="chat-body"
+            aria-live="polite"
+        >
+
+            <div class="atalhos">
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="ansiedade"
+        >
+            😟 Ansiedade
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="depressao"
+        >
+            😔 Depressão
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="psicoterapia"
+        >
+            🧠 Psicoterapia
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="online"
+        >
+            💻 Atendimento Online
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="presencial"
+        >
+            🏢 Atendimento Presencial
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="valores"
+        >
+            💰 Valores
+        </button>
+    </form>
+
+    <form method="POST">
+        <button
+            type="submit"
+            name="atalho"
+            value="agendamento"
+        >
+            📅 Solicitar Atendimento
+        </button>
+    </form>
+
+</div>
+
+            <!-- Mensagens -->
+            <div class="lista-mensagens">
+
+                {% for mensagem in conversa %}
+
+                    <article
+                        class="mensagem {{ mensagem.tipo }}"
+                        {% if loop.last %}
+                            id="ultima-mensagem"
+                        {% endif %}
+                    >
+
+                        <div class="mensagem-remetente">
+
+                            {% if mensagem.tipo == "usuario" %}
+
+                                Você
+
+                            {% else %}
+
+                                Assistente
+
+                            {% endif %}
+
+                        </div>
+
+                        <div class="mensagem-texto">
+                            {{
+                                mensagem.texto
+                                | replace('\n', '<br>')
+                                | safe
+                            }}
+                        </div>
+
+                    </article>
+
+                {% endfor %}
+
+            </div>
+
+            <div
+                id="fim-chat"
+                aria-hidden="true"
+            ></div>
+
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="chat-footer">
+
+            {% if mostrar_botao_lead and estado_atendimento %}
+
+                <section
+                    class="chamada-atendimento"
+                    id="chamada-atendimento"
+                >
+
+                    <h2>
+                        Confirme sua solicitação
+                    </h2>
+
+                    <p>
+                        Confira os dados coletados antes de enviar.
+                    </p>
+
+                    <div class="resumo-atendimento">
+
+                        <p>
+                            <strong>Nome:</strong>
+                            {{
+                                estado_atendimento.nome
+                                or "Não informado"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>WhatsApp:</strong>
+                            {{
+                                estado_atendimento.whatsapp
+                                or "Não informado"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>E-mail:</strong>
+                            {{
+                                estado_atendimento.email
+                                or "Não informado"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>Modalidade:</strong>
+                            {{
+                                estado_atendimento.modalidade
+                                or "Não informada"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>Período:</strong>
+                            {{
+                                estado_atendimento.periodo
+                                or "Não informado"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>Dia preferido:</strong>
+                            {{
+                                estado_atendimento.dia_preferido
+                                or "Não informado"
+                            }}
+                        </p>
+
+                        <p>
+                            <strong>Motivo:</strong>
+                            {{
+                                estado_atendimento.motivo
+                                or "Não informado"
+                            }}
+                        </p>
+
+                    </div>
+
+                    <form
+                        method="POST"
+                        action="{{ url_for('enviar_solicitacao') }}"
+                        id="formulario-envio-solicitacao"
+                    >
+
+                        <button
+                            type="submit"
+                            class="botao-atendimento"
+                            id="botao-enviar-solicitacao"
+                        >
+                            ✅ Enviar solicitação
+                        </button>
+
+                    </form>
+
+                    <a
+                        href="{{ url_for('limpar') }}"
+                        class="link-corrigir-dados"
+                    >
+                        Corrigir ou iniciar novamente
+                    </a>
+
+                </section>
+
+            {% else %}
+
+                <form
+                    method="POST"
+                    class="formulario-mensagem"
+                    id="formulario-mensagem"
+                >
+
+                    <label
+                        for="pergunta"
+                        class="sr-only"
+                    >
+                        Digite sua mensagem
+                    </label>
+
+                    <input
+                        id="pergunta"
+                        type="text"
+                        name="pergunta"
+                        placeholder="Digite sua mensagem..."
+                        maxlength="500"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        id="botao-enviar-mensagem"
+                    >
+                        Enviar
+                    </button>
+
+                </form>
+
+            {% endif %}
+
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+                const chatBody =
+                    document.querySelector("#chat-body");
+
+                const campoPergunta =
+                    document.querySelector("#pergunta");
+
+                const formularioMensagem =
+                    document.querySelector(
+                        "#formulario-mensagem"
+                    );
+
+                const formularioSolicitacao =
+                    document.querySelector(
+                        "#formulario-envio-solicitacao"
+                    );
+
+                function rolarParaOFinal(
+                    comportamento = "auto"
+                ) {
+                    if (!chatBody) {
+                        return;
+                    }
+
+                    chatBody.scrollTo({
+                        top: chatBody.scrollHeight,
+                        behavior: comportamento
+                    });
+                }
+
+                function atualizarRolagem() {
+                    rolarParaOFinal("auto");
+
+                    requestAnimationFrame(
+                        function () {
+                            rolarParaOFinal("smooth");
+                        }
+                    );
+
+                    setTimeout(
+                        function () {
+                            rolarParaOFinal("smooth");
+                        },
+                        120
+                    );
+                }
+
+                atualizarRolagem();
+
+                window.addEventListener(
+                    "load",
+                    atualizarRolagem
+                );
+
+                if (
+                    campoPergunta
+                    && !formularioSolicitacao
+                ) {
+                    campoPergunta.focus();
+                }
+
+                if (formularioMensagem) {
+                    formularioMensagem.addEventListener(
+                        "submit",
+                        function () {
+                            const botao =
+                                formularioMensagem.querySelector(
+                                    'button[type="submit"]'
+                                );
+
+                            if (botao) {
+                                botao.disabled = true;
+                                botao.textContent = "Enviando...";
+                            }
+                        }
+                    );
+                }
+
+                if (formularioSolicitacao) {
+                    formularioSolicitacao.addEventListener(
+                        "submit",
+                        function () {
+                            const botao =
+                                formularioSolicitacao.querySelector(
+                                    'button[type="submit"]'
+                                );
+
+                            if (botao) {
+                                botao.disabled = true;
+                                botao.textContent =
+                                    "Enviando solicitação...";
+                            }
+                        }
+                    );
+                }
+            }
+        );
+    </script>
+
+</body>
+
+</html>

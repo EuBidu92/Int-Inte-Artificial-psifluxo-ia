@@ -1,0 +1,61 @@
+PSIFLUXO IA — MÉTRICAS FINAIS DO CLASSIFICADOR
+
+Base de dados:
+- Total de registros: 500
+- Classes: 5
+- Registros por classe: 100
+- Treino: 400 registros
+- Teste: 100 registros
+- Divisão: 80% treino / 20% teste
+- Random state: 42
+
+Modelo:
+- Vetorização: TF-IDF
+- N-gramas: unigramas e bigramas
+- Classificador: Regressão Logística
+- Balanceamento: class_weight="balanced"
+- Limiar de confiança do sistema: 0,40
+
+Resultados gerais:
+- Acurácia: 85%
+- Precisão macro: 85%
+- Recall macro: 85%
+- F1-score macro: 85%
+
+Resultados por classe:
+
+Agendamento
+- Precisão: 0,95
+- Recall: 0,95
+- F1-score: 0,95
+- Suporte: 20
+
+Funcionamento
+- Precisão: 0,88
+- Recall: 0,75
+- F1-score: 0,81
+- Suporte: 20
+
+Modalidade
+- Precisão: 0,81
+- Recall: 0,85
+- F1-score: 0,83
+- Suporte: 20
+
+Remarcação
+- Precisão: 0,78
+- Recall: 0,90
+- F1-score: 0,84
+- Suporte: 20
+
+Valores
+- Precisão: 0,84
+- Recall: 0,80
+- F1-score: 0,82
+- Suporte: 20
+
+Testes automatizados:
+- Total: 179
+- Aprovados: 179
+- Falhas: 0
+- Tempo total da execução final registrada: 10,94 segundos

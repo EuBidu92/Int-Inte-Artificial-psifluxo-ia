@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <title>
+        Painel Administrativo | PsiFluxo IA
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='admin.css') }}"
+    >
+</head>
+
+<body>
+
+    <div class="pagina-admin">
+
+        <header class="cabecalho-admin">
+
+            <div>
+                <p class="identificacao-sistema">
+                    PsiFluxo IA
+                </p>
+
+                <h1>
+                    Painel de solicitações
+                </h1>
+
+                <p class="descricao-cabecalho">
+                    Acompanhamento dos contatos recebidos
+                    pelo atendimento virtual.
+                </p>
+            </div>
+
+            <nav
+                class="acoes-cabecalho"
+                aria-label="Ações administrativas"
+            >
+                <a
+                    href="{{ url_for('inicio') }}"
+                    class="botao botao-secundario"
+                >
+                    Voltar ao chat
+                </a>
+
+                <a
+                    href="{{ url_for('exportar') }}"
+                    class="botao botao-exportar"
+                >
+                    Exportar Excel
+                </a>
+
+                <a
+                    href="{{ url_for('logout') }}"
+                    class="botao botao-sair"
+                >
+                    Sair
+                </a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section
+                class="grade-indicadores"
+                aria-label="Indicadores das solicitações"
+            >
+
+                <article class="card-indicador destaque">
+                    <span class="icone-indicador">
+                        📋
+                    </span>
+
+                    <div>
+                        <p>Total de solicitações</p>
+                        <strong>{{ total }}</strong>
+                    </div>
+                </article>
+
+                <article class="card-indicador">
+                    <span class="icone-indicador">
+                        💻
+                    </span>
+
+                    <div>
+                        <p>Online</p>
+                        <strong>{{ online }}</strong>
+                    </div>
+                </article>
+
+                <article class="card-indicador">
+                    <span class="icone-indicador">
+                        🏢
+                    </span>
+
+                    <div>
+                        <p>Presencial</p>
+                        <strong>{{ presencial }}</strong>
+                    </div>
+                </article>
+
+                <article class="card-indicador">
+                    <span class="icone-indicador">
+                        🌅
+                    </span>
+
+                    <div>
+                        <p>Manhã</p>
+                        <strong>{{ manha }}</strong>
+                    </div>
+                </article>
+
+                <article class="card-indicador">
+                    <span class="icone-indicador">
+                        ☀️
+                    </span>
+
+                    <div>
+                        <p>Tarde</p>
+                        <strong>{{ tarde }}</strong>
+                    </div>
+                </article>
+
+                <article class="card-indicador">
+                    <span class="icone-indicador">
+                        🌙
+                    </span>
+
+                    <div>
+                        <p>Noite</p>
+                        <strong>{{ noite }}</strong>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="secao-listagem">
+
+                <div class="titulo-listagem">
+
+                    <div>
+                        <h2>
+                            Solicitações recebidas
+                        </h2>
+
+                        <p>
+                            {{ quantidade_filtrada }}
+                            registro(s) exibido(s).
+                        </p>
+                    </div>
+
+                </div>
+
+                <form
+                    method="GET"
+                    action="{{ url_for('listar_leads') }}"
+                    class="formulario-filtros"
+                >
+
+                    <div class="campo-filtro campo-pesquisa">
+
+                        <label for="q">
+                            Pesquisar
+                        </label>
+
+                        <input
+                            id="q"
+                            type="search"
+                            name="q"
+                            value="{{ pesquisa }}"
+                            placeholder="Nome, e-mail, telefone ou motivo"
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <div class="campo-filtro">
+
+                        <label for="modalidade">
+                            Modalidade
+                        </label>
+
+                        <select
+                            id="modalidade"
+                            name="modalidade"
+                        >
+                            <option value="">
+                                Todas
+                            </option>
+
+                            <option
+                                value="online"
+                                {% if filtro_modalidade == "online" %}
+                                    selected
+                                {% endif %}
+                            >
+                                Online
+                            </option>
+
+                            <option
+                                value="presencial"
+                                {% if filtro_modalidade == "presencial" %}
+                                    selected
+                                {% endif %}
+                            >
+                                Presencial
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <div class="campo-filtro">
+
+                        <label for="periodo">
+                            Período
+                        </label>
+
+                        <select
+                            id="periodo"
+                            name="periodo"
+                        >
+                            <option value="">
+                                Todos
+                            </option>
+
+                            <option
+                                value="manhã"
+                                {% if filtro_periodo in ["manhã", "manha"] %}
+                                    selected
+                                {% endif %}
+                            >
+                                Manhã
+                            </option>
+
+                            <option
+                                value="tarde"
+                                {% if filtro_periodo == "tarde" %}
+                                    selected
+                                {% endif %}
+                            >
+                                Tarde
+                            </option>
+
+                            <option
+                                value="noite"
+                                {% if filtro_periodo == "noite" %}
+                                    selected
+                                {% endif %}
+                            >
+                                Noite
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <div class="acoes-filtro">
+
+                        <button
+                            type="submit"
+                            class="botao botao-filtrar"
+                        >
+                            Aplicar filtros
+                        </button>
+
+                        <a
+                            href="{{ url_for('listar_leads') }}"
+                            class="botao botao-limpar"
+                        >
+                            Limpar
+                        </a>
+
+                    </div>
+
+                </form>
+
+                {% if leads %}
+
+                    <div class="tabela-container">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Nome</th>
+                                    <th>Contato</th>
+                                    <th>Motivo</th>
+                                    <th>Modalidade</th>
+                                    <th>Período</th>
+                                    <th>Dia</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                {% for lead in leads %}
+
+                                    <tr>
+
+                                        <td
+                                            data-label="Data"
+                                            class="coluna-data"
+                                        >
+                                            {{ lead.Data }}
+                                        </td>
+
+                                        <td
+                                            data-label="Nome"
+                                            class="coluna-nome"
+                                        >
+                                            <strong>
+                                                {{ lead.Nome }}
+                                            </strong>
+                                        </td>
+
+                                        <td
+                                            data-label="Contato"
+                                            class="coluna-contato"
+                                        >
+                                            <span>
+                                                📱
+                                                {{ lead.WhatsAppMascarado }}
+                                            </span>
+
+                                            <span>
+                                                ✉️
+                                                {{ lead.EmailMascarado }}
+                                            </span>
+                                        </td>
+
+                                        <td
+                                            data-label="Motivo"
+                                            class="coluna-motivo"
+                                        >
+                                            <details>
+                                                <summary>
+                                                    Visualizar
+                                                </summary>
+
+                                                <p>
+                                                    {{ lead.Motivo }}
+                                                </p>
+                                            </details>
+                                        </td>
+
+                                        <td
+                                            data-label="Modalidade"
+                                        >
+                                            <span class="etiqueta etiqueta-modalidade">
+                                                {{ lead.Preferencia|capitalize }}
+                                            </span>
+                                        </td>
+
+                                        <td
+                                            data-label="Período"
+                                        >
+                                            <span class="etiqueta">
+                                                {{ lead.Periodo|capitalize }}
+                                            </span>
+                                        </td>
+
+                                        <td
+                                            data-label="Dia"
+                                        >
+                                            {{ lead.DiaPreferido|capitalize }}
+                                        </td>
+
+                                    </tr>
+
+                                {% endfor %}
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                {% else %}
+
+                    <div class="estado-vazio">
+
+                        <div class="icone-vazio">
+                            🔎
+                        </div>
+
+                        <h3>
+                            Nenhuma solicitação encontrada
+                        </h3>
+
+                        <p>
+                            Não existem registros correspondentes
+                            aos filtros selecionados.
+                        </p>
+
+                        <a
+                            href="{{ url_for('listar_leads') }}"
+                            class="botao botao-filtrar"
+                        >
+                            Exibir todos
+                        </a>
+
+                    </div>
+
+                {% endif %}
+
+            </section>
+
+            <section class="aviso-privacidade">
+
+                <span aria-hidden="true">
+                    🔒
+                </span>
+
+                <p>
+                    Os dados de contato são parcialmente
+                    ocultados nesta tela para reduzir exposição
+                    desnecessária. A planilha exportada contém os
+                    dados completos e deve ser armazenada de forma
+                    segura.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

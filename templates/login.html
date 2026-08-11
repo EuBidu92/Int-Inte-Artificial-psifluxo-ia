@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <title>
+        Acesso administrativo | PsiFluxo IA
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='admin.css') }}"
+    >
+
+    <style>
+        body {
+            display: grid;
+            min-height: 100vh;
+            place-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: min(100%, 430px);
+            overflow: hidden;
+            border: 1px solid var(--cinza-borda);
+            border-radius: 18px;
+            background: var(--branco);
+            box-shadow: var(--sombra);
+        }
+
+        .login-cabecalho {
+            padding: 30px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-escuro),
+                    var(--azul-principal)
+                );
+            color: var(--branco);
+            text-align: center;
+        }
+
+        .login-cabecalho span {
+            font-size: 2.4rem;
+        }
+
+        .login-cabecalho h1 {
+            margin: 12px 0 5px;
+            font-size: 1.65rem;
+        }
+
+        .login-cabecalho p {
+            margin: 0;
+            color: #dceafb;
+            line-height: 1.45;
+        }
+
+        .login-formulario {
+            display: flex;
+            padding: 28px;
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        .login-campo {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .login-campo label {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .login-campo input {
+            width: 100%;
+            min-height: 46px;
+            padding: 11px 13px;
+            border: 1px solid #cbd4df;
+            border-radius: 9px;
+        }
+
+        .login-campo input:focus {
+            outline: 3px solid rgba(21, 88, 166, 0.16);
+            border-color: var(--azul-principal);
+        }
+
+        .mensagem-erro {
+            margin: 0;
+            padding: 11px 13px;
+            border: 1px solid #f1b4ae;
+            border-radius: 9px;
+            background: #fff1f0;
+            color: var(--vermelho);
+            font-size: 0.88rem;
+        }
+
+        .botao-login {
+            width: 100%;
+            border: 0;
+            background: var(--azul-principal);
+            color: var(--branco);
+        }
+
+        .voltar-chat {
+            color: var(--azul-principal);
+            font-size: 0.9rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .voltar-chat:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <header class="login-cabecalho">
+
+            <span aria-hidden="true">
+                🔐
+            </span>
+
+            <h1>
+                Área administrativa
+            </h1>
+
+            <p>
+                Acesso restrito ao gerenciamento
+                das solicitações recebidas.
+            </p>
+
+        </header>
+
+        <form
+            method="POST"
+            action="{{ url_for('login') }}"
+            class="login-formulario"
+        >
+
+            {% if erro %}
+
+                <p
+                    class="mensagem-erro"
+                    role="alert"
+                >
+                    {{ erro }}
+                </p>
+
+            {% endif %}
+
+            <div class="login-campo">
+
+                <label for="username">
+                    Usuário
+                </label>
+
+                <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    autocomplete="username"
+                    required
+                    autofocus
+                >
+
+            </div>
+
+            <div class="login-campo">
+
+                <label for="password">
+                    Senha
+                </label>
+
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+            <button
+                type="submit"
+                class="botao botao-login"
+            >
+                Entrar
+            </button>
+
+            <a
+                href="{{ url_for('inicio') }}"
+                class="voltar-chat"
+            >
+                Voltar ao atendimento
+            </a>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

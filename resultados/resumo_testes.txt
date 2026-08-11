@@ -1,0 +1,12 @@
+PSIFLUXO IA — RESUMO FINAL DOS TESTES
+
+Ambiente validado pelo usuário em 08/08/2026.
+
+Resultado final:
+- Testes coletados: 179
+- Testes aprovados: 179
+- Falhas: 0
+- Erros: 0
+- Tempo registrado: 10,94 s
+
+A suíte cobre a aplicação Flask, classificador de intenções, conversa híbrida, integração/fallback Groq, interpretador, motor de regras, orquestrador e pré-roteador conversacional.
